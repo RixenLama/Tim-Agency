@@ -1,0 +1,81 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+*,
+*::after, 
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COLORS*/
+.WHITE{
+    color: #FFFFFF;
+}
+.BLACK{
+    color: #000000;
+}
+.BLUE{
+    color: #315EFF;
+}
+.LIGHTBLUE{
+    color: #7391FA;
+}
+.GREY{
+    color: #464646;
+}
+
+/*FONTS*/
+.MONTSERRAT{
+    font-family: 'Montserrat', sans-serif;
+}
+.ESTEBAN{
+    font-family: 'Esteban', serif;
+}
+.MAITREE{
+    font-family: 'Maitree', serif;
+}
+
+
+/*Fixed Var*/
+.horizontal-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/*CONTAINERS*/
+.container{
+    width: 85%;
+    margin-inline: auto;
+}
+
+/*NAVBAR*/
+.navbar{
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    border-bottom: #315EFF solid 2px;
+}
+.nav-container{
+    height: inherit;
+    width: 85%;
+    margin-inline: auto;
+    justify-content: space-between;
+    display: flex;
+}
+.nav-item{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-ul{
+    height: 100%;
+    gap: 2rem;
+}
