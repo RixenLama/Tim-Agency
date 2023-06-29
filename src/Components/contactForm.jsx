@@ -1,13 +1,14 @@
 "import { useForm } from 'react-hook-form';"
 
-
 const ContactForm = () => {
     
     return (
         <div className="contact-bg">
             <div className="container">
-                <div className="contacts-container">
+                <div className="title-container">
                     <h1 className="MONTSERRAT WHITE">Let's get in touch</h1>
+                </div>
+                <div className="contacts-container">
                     <div className="contact-container">  
                         <div className="contact-card">
                             <img src="./phone-icon.svg" alt="" />
@@ -44,16 +45,20 @@ const ContactForm = () => {
                             </div>
                         </div>
 
-                        <div className="form-bottom">
+                        <div className="FULLWIDTH">
                             <div className="big-form">
                                 <span className="ESTEBAN LIGHTGREY">Message</span>
                                 <input className="MAITREE big-text-input" type="text" />
                             </div>
                         </div>
 
-                        <div className="privary-policy">
+                        <div className="FULLWIDTH">
                             <input type="checkbox" />
                             <span className="ESTEBAN LIGHTGREY">By selecting this, you agree to <a href="#">privacy policy</a>.</span>
+                        </div>
+
+                        <div className="FULLWIDTH">
+                            <button className="SMALLBUTTON ESTEBAN WHITE BUTTONSIZE">Submit</button>
                         </div>
 
                     </div> 
