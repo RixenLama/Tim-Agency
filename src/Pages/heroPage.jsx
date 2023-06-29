@@ -1,9 +1,16 @@
 
 const HeroPage = () => {
     return(
-        <div>
-            <div>
-            <button className="SMALLBUTTON ESTEBAN WHITE BUTTONSIZE">Submit</button>
+        <div className="hero-container">
+            <div className="hero-video-container">
+                <video className="hero-video" autoPlay muted loop>
+                    <source src="./hero-vid.mp4" type="video/mp4"/>
+                </video>
+            </div>
+            <div className="hero-text-container">
+                <h1 className="MONTSERRAT hero-text">
+                    WE CARE ABOUT YOUR SUCCESS!
+                </h1>
             </div>
         </div>
     )
