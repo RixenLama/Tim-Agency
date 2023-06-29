@@ -29,6 +29,9 @@ body{
 .GREY{
     color: #464646;
 }
+.LIGHTGREY{
+    color: #CECECE;
+}
 
 /*FONTS*/
 .MONTSERRAT{
@@ -40,7 +43,22 @@ body{
 .MAITREE{
     font-family: 'Maitree', serif;
 }
-
+h1{
+    font-weight: 300;
+    font-size: 45px;
+}
+h2{
+    font-weight: 300;
+    font-size: 30px;
+}
+span{
+    font-weight: 300;
+    font-size: 12px;
+}
+p{
+    font-weight: 300;
+    font-size: 14px;
+}
 
 /*Fixed Var*/
 .horizontal-list{
@@ -78,4 +96,78 @@ body{
 .nav-ul{
     height: 100%;
     gap: 2rem;
+}
+
+/*CONTACT PAGE*/
+.contact-bg {
+    background-image: url("./contact-page-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 1.8rem;
+    padding-bottom: 4rem;
+}
+
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 60%;
+    margin-inline: auto;
+}
+.contact-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact-card{
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+.contact-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.form-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.small-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 45%;
+}
+.big-form{
+    width: 100%;
+}
+.small-text-input{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.big-text-input{
+    border: none;
+    height: 90px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+.privacy-policy{
+    display: flex;
+    width: 100%;
 }
