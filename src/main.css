@@ -54,6 +54,10 @@ h2{
     font-weight: 300;
     font-size: 30px;
 }
+h3{
+    font-weight: 300;
+    font-size: 16px;
+}
 span{
     font-weight: 300;
     font-size: 12px;
@@ -61,6 +65,18 @@ span{
 p{
     font-weight: 300;
     font-size: 14px;
+}
+
+/*ANIMATIONS*/
+.SMALLBUTTON:hover{
+    transform: scale(110%);
+    box-shadow: 0px 10px 52px -15px rgba(97, 171, 255, 1);
+    opacity: 1;
+}
+.BIGBUTTON:hover{
+    transform: scale(110%);
+    box-sizing: 0px 10px 52px -15px rgba(97, 171, 255, 1);
+    opacity: 1;
 }
 
 /*Fixed Var*/
@@ -75,6 +91,7 @@ p{
     background-color: #315EFF;
     border-radius: 40px;
     border: none;
+    opacity: 0.85;
 }
 .BIGBUTTON{
     padding: 1.10rem;
@@ -82,9 +99,13 @@ p{
     background-color: #315EFF;
     border-radius: 40px;
     border: none;
+    opacity: 0.85;
 }
 .FULLWIDTH{
     width: 100%;
+}
+.TEXTCENTER{
+    text-align: center;
 }
 
 /*CONTAINERS*/
@@ -227,4 +248,51 @@ p{
 .privacy-policy{
     display: flex;
     width: 100%;
+}
+
+/*FIRST PAGE*/
+.first-page-bg{
+    background-image: url("./first-page.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.first-page-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+.first-page-title-h1{
+    text-align: center;
+}
+.first-page-text-card-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.first-page-text-card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 1rem;
+}
+.first-page-slogan-container{
+    display: flex;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+.first-page-slogan-text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 3rem;
+}
+.first-page-slogan-text{
+    font-size: 20px;
+}
+.first-page-slogan-button{
+    width: 45%;
 }
