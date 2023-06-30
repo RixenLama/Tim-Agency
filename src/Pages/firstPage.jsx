@@ -30,7 +30,7 @@ const FirstPage = () => {
 
                 <div className="first-page-slogan-container">
                     <div className="first-page-slogan-image-container">
-                        <img src="./first-page-slogan-image.svg" alt="" />
+                        <img className="first-page-slogan-image" src="./first-page-slogan-image.svg" alt="" />
                     </div>
                     <div className="first-page-slogan-text-container">
                         <h2 className="first-page-slogan-title WHITE ESTEBAN">Boost Conversations</h2>

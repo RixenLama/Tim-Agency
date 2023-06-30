@@ -1,6 +1,5 @@
 body{
     min-height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -197,6 +196,7 @@ p{
     backdrop-filter: blur(4);
 }
 .hero-text{
+    text-align: center;
     font-size: 64px;
     font-weight: 700;
     background: -webkit-linear-gradient(#000000, #315EFF);
@@ -209,7 +209,7 @@ p{
     background-image: url(".././public/contact-page-bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     padding-top: 1.8rem;
     padding-bottom: 9rem;
 }
@@ -273,7 +273,7 @@ p{
 }
 .big-text-input{
     border: none;
-    height: 90px;
+    height: 140px;
     width: 100%;
     border-radius: 5px;
     text-align: center;
@@ -313,9 +313,14 @@ p{
 }
 .first-page-slogan-container{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-top: 5rem;
     padding-bottom: 6rem;
+}
+.first-page-slogan-image-container{
+    display: flex;
+    justify-content: center;
 }
 .first-page-slogan-text-container{
     display: flex;
@@ -332,11 +337,18 @@ p{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
     .mobile-menu-container{
         display: flex;
     }
     .nav-ul{
         display: none;
+    }
+    .first-page-slogan-container{
+        flex-direction: column;
+    }
+    .first-page-slogan-image{
+        width: 400px;
+        object-fit: contain;
     }
 }

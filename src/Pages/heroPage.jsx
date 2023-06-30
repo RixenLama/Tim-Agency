@@ -8,9 +8,11 @@ const HeroPage = () => {
                 </video>
             </div>
             <div className="hero-text-container">
-                <h1 className="MONTSERRAT hero-text">
-                    WE CARE ABOUT YOUR SUCCESS!
-                </h1>
+                <div className="container">
+                    <h1 className="MONTSERRAT hero-text">
+                        WE CARE ABOUT YOUR SUCCESS!
+                    </h1>
+                </div>
             </div>
         </div>
     )
