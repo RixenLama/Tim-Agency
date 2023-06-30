@@ -252,7 +252,7 @@ p{
 
 /*FIRST PAGE*/
 .first-page-bg{
-    background-image: url("./first-page.svg");
+    background-image: url("./first-page-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
