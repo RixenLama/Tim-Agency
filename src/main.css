@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -140,6 +140,39 @@ p{
     height: 100%;
     gap: 2rem;
 }
+.mobile-menu-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.mobile-menu{
+    width: 32px;
+    height: 32px;
+}
+.mobile-menu-exit{
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+.mobile-dropbar{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #000000;
+    border-bottom: 2px solid #315EFF;
+}
+.mobile-nav-ul{
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 /*HERO PAGE*/
 .hero-video-container{
@@ -176,7 +209,7 @@ p{
     background-image: url(".././public/contact-page-bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     padding-top: 1.8rem;
     padding-bottom: 9rem;
 }
@@ -295,4 +328,15 @@ p{
 }
 .first-page-slogan-button{
     width: 45%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .mobile-menu-container{
+        display: flex;
+    }
+    .nav-ul{
+        display: none;
+    }
 }
