@@ -173,7 +173,7 @@ p{
 
 /*CONTACT PAGE*/
 .contact-bg {
-    background-image: url("./contact-page-bg.svg");
+    background-image: url(".././public/contact-page-bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
