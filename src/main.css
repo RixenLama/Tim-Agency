@@ -331,13 +331,10 @@ p{
 .first-page-slogan-text{
     font-size: 20px;
 }
-.first-page-slogan-button{
-    width: 45%;
-}
 
 
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 900px) {
     .mobile-menu-container{
         display: flex;
     }
@@ -350,5 +347,9 @@ p{
     .first-page-slogan-image{
         width: 400px;
         object-fit: contain;
+    }
+    .contact-container{
+        flex-direction: column;
+        gap: 1rem;
     }
 }

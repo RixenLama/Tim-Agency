@@ -37,9 +37,11 @@ const FirstPage = () => {
                         <span className="first-page-slogan-text WHITE MAITREE">
                             "Including a video on a landing page can increase conversion by 80% (Unbounce)."
                         </span>
-                        <button className="SMALLBUTTON BUTTONSIZE ESTEBAN WHITE first-page-slogan-button">
-                            Get Started ->
-                        </button>
+                        <div>
+                            <button className="SMALLBUTTON BUTTONSIZE ESTEBAN WHITE">
+                                Get Started ->
+                            </button>
+                        </div>
                     </div>
 
                 </div>
