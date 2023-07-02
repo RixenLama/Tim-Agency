@@ -4,7 +4,7 @@ const FirstPage = () => {
         <div className="first-page-bg">
             <div  className="container">
                 <div className="first-page-title">
-                    <h1 className="WHITE MONTSERRAT first-page-title-h1">High-Converting Animated Videos For Marketing Companies</h1>
+                    <h1 className="WHITE MONTSERRAT TEXTCENTER">High-Converting Animated Videos For Marketing Companies</h1>
                 </div>
 
                 <div className="first-page-text-card-container">

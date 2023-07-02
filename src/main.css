@@ -297,9 +297,6 @@ p{
     padding-bottom: 5rem;
     width: 100%;
 }
-.first-page-title-h1{
-    text-align: center;
-}
 .first-page-text-card-container{
     display: flex;
     justify-content: space-around;
@@ -331,6 +328,20 @@ p{
 .first-page-slogan-text{
     font-size: 20px;
 }
+/*SECOND PAGE*/
+.second-page-bg{
+    background-image: url(".././public/second-page.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.second-page-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+.video-container
 
 
 
