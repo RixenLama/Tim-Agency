@@ -135,6 +135,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .nav-ul{
     height: 100%;
@@ -290,6 +291,7 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    height: 100%;
 }
 .first-page-title{
     display: flex;
@@ -335,6 +337,7 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    height: 100%;
 }
 .second-page-grid{
     display: grid;
@@ -359,8 +362,9 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    height: 100%;
     padding-top: 12rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 7rem;
 }
 .third-page-bg-blur{
     background-color: rgba(0, 0, 0, 0.366);
@@ -382,6 +386,42 @@ p{
 .third-page-card-img{
     width: 20px;
     height: 20px;
+}
+
+
+/*FOURTH PAGE*/
+.fourth-page-bg{
+    background-image: url(".././public/fourth-page.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+}
+.fourth-page-quote-container{
+    display: flex;
+    width: inherit;
+    margin-inline: auto;
+    gap: 4rem;
+}
+.fourth-page-quote-vid-container{
+    width: 50%;
+}
+.fourth-page-quote-img{
+    width: 100%;
+    cursor: pointer;
+}
+.fourth-page-quote{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.fourth-page-quote-paragraph-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 @media only screen and (max-width: 900px) {

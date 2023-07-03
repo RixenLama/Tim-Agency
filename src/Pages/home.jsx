@@ -4,6 +4,7 @@ import HeroPage from "./heroPage.jsx"
 import FirstPage from "./firstPage.jsx"
 import SecondPage from "./secondPage.jsx"
 import ThirdPage from "./thirdPage.jsx"
+import FourthPage from "./fourthPage.jsx"
 
 const HomePage = () => {
     return ( 
@@ -13,6 +14,7 @@ const HomePage = () => {
             <FirstPage />
             <SecondPage />
             <ThirdPage />
+            <FourthPage />
             <ContactForm />
         </>
     )
