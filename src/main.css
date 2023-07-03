@@ -365,7 +365,7 @@ p{
 .third-page-bg-blur{
     background-color: rgba(0, 0, 0, 0.366);
     padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 7.5rem;
 }
 .third-page-card-container{
     display: flex;
