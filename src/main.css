@@ -107,6 +107,7 @@ p{
     text-align: center;
 }
 
+
 /*CONTAINERS*/
 .container{
     width: 85%;
@@ -340,10 +341,48 @@ p{
     grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
     row-gap: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 4rem;
 }
-.video-container
+.video-container{
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #464646;
+}
 
-
+/*THIRD PAGE*/
+.third-page-bg{
+    background-image: url(".././public/third-page.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+.third-page-bg-blur{
+    background-color: rgba(0, 0, 0, 0.366);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.third-page-card-container{
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    gap: 2rem;
+}
+.third-page-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 18%;
+}
+.third-page-card-img{
+    width: 20px;
+    height: 20px;
+}
 
 @media only screen and (max-width: 900px) {
     .mobile-menu-container{
@@ -362,5 +401,18 @@ p{
     .contact-container{
         flex-direction: column;
         gap: 1rem;
+    }
+    .second-page-grid{
+        grid-template-columns: repeat(2, 48%);
+    }
+    .video-container{
+        height: 200px;
+    }
+    .third-page-card-container{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .third-page-card{
+        width: 40%;
     }
 }

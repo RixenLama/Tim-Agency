@@ -11,6 +11,9 @@ const SecondPage = () =>{
                     <div className="video-container">vid</div>
                     <div className="video-container">vid</div>
                     <div className="video-container">vid</div>
+                    <div className="video-container">vid</div>
+                    <div className="video-container">vid</div>
+                    <div className="video-container">vid</div>
                 </div>
             </div>
         </div>

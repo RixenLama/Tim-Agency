@@ -3,6 +3,7 @@ import ContactForm from "../Components/contactForm.jsx"
 import HeroPage from "./heroPage.jsx"
 import FirstPage from "./firstPage.jsx"
 import SecondPage from "./secondPage.jsx"
+import ThirdPage from "./thirdPage.jsx"
 
 const HomePage = () => {
     return ( 
@@ -11,6 +12,7 @@ const HomePage = () => {
             <HeroPage />
             <FirstPage />
             <SecondPage />
+            <ThirdPage />
             <ContactForm />
         </>
     )
