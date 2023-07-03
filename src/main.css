@@ -455,4 +455,7 @@ p{
     .third-page-card{
         width: 40%;
     }
+    .fourth-page-quote-container{
+        flex-direction: column;
+    }
 }
