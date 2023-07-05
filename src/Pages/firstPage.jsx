@@ -1,3 +1,5 @@
+import { HashLink as Link } from "react-router-hash-link"
+
 
 const FirstPage = () => {
     return(
@@ -39,7 +41,7 @@ const FirstPage = () => {
                         </span>
                         <div>
                             <button className="SMALLBUTTON BUTTONSIZE ESTEBAN WHITE">
-                                Get Started ->
+                                <Link smooth to="/#store" className="BUTTONSIZE ESTEBAN WHITE LINK">Get Started -></Link>
                             </button>
                         </div>
                     </div>

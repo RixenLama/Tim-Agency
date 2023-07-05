@@ -14,6 +14,9 @@ body{
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 /*COLORS*/
@@ -118,7 +121,9 @@ p{
 .TEXTCENTER{
     text-align: center;
 }
-
+.LINK{
+    text-decoration: none;
+}
 
 /*CONTAINERS*/
 .container{
