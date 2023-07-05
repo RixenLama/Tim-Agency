@@ -49,16 +49,16 @@ const NavBar = () => {
                     <div>
                         <ul className="mobile-nav-ul">
                             <li className="WHITE ESTEBAN mobile-nav-li">
-                                Portfolio
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#portfolio">Portfolio</Link>
                             </li>
                             <li className="WHITE ESTEBAN mobile-nav-li">
-                                Pricing
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#store">Pricing</Link>
                             </li>
                             <li className="WHITE ESTEBAN mobile-nav-li">
-                                About us
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#about-us">About us</Link>
                             </li>
                             <li className="WHITE ESTEBAN mobile-nav-li">
-                                Get a quote
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#contact">Get a quote</Link>
                             </li>
                         </ul>
                     </div>
