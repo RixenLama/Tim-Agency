@@ -340,11 +340,11 @@ p{
 }
 /*SECOND PAGE*/
 .second-page-bg{
-    background-image: url(".././public/second-page.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(#315EFF, #2E2D4F);
     width: 100%;
-    height: 100%;
+}
+.second-page-bg::after{
+    background-color: #2E2D4F;
 }
 .second-page-grid{
     display: grid;
@@ -369,13 +369,19 @@ p{
     background-size: cover;
     width: 100%;
     background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center;
+}
+.third-page-bg::before{
+    border: 4px solid #2E2D4F;
 }
 .third-page-bg-blur{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.366);
-    min-height: 600px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 .third-page-card-container{
     display: flex;
@@ -401,7 +407,8 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
 }
 .fourth-page-quote-container{
     display: flex;
@@ -437,9 +444,7 @@ p{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    max-height: 100%;
-    min-height: 800px;
+    padding-bottom: 6rem;
 }
 .fifth-page-card-container{
     margin-top: 2rem;
@@ -527,5 +532,19 @@ p{
     .fourth-page-quote{
         width: 100%;
         text-align: center;
+    }
+    .fifth-page-card-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .fifth-page-card-1{
+        width: 75%
+    }
+    .fifth-page-card-2{
+        width: 75%
+    }
+    .fifth-page-card-3{
+        width: 75%
     }
 }
