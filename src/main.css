@@ -547,4 +547,7 @@ p{
     .fifth-page-card-3{
         width: 75%
     }
+    .contacts-container{
+        width: 100%;
+    }
 }
