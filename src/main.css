@@ -227,6 +227,7 @@ p{
 .title-container{
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
     padding-bottom: 5rem;
 }
 .contacts-container{
