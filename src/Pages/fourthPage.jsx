@@ -2,7 +2,7 @@
 const FourthPage = () =>{
 
     return(
-        <div className="fourth-page-bg">
+        <div className="fourth-page-bg" id="about-us">
             <div className="container">
                 <div className="fourth-page-quote-container">
                     <div className="fourth-page-quote-img-container ">

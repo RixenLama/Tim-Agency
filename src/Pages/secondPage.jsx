@@ -1,7 +1,7 @@
 
 const SecondPage = () =>{
     return(
-        <div className="second-page-bg">
+        <div className="second-page-bg" id="portfolio">
             <h1 className="WHITE MONTSERRAT TEXTCENTER">Portfolio</h1>
             <div className="container">
                 <div className="second-page-grid">

@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link"
 
 const NavBar = () => {
 
@@ -24,17 +25,17 @@ const NavBar = () => {
 
                     <div>
                         <ul className="horizontal-list nav-ul">
-                            <li className="WHITE ESTEBAN nav-item">
-                                Portfolio
+                            <li className="nav-item">
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#portfolio">Portfolio</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#store">Pricing</Link>
                             </li>
                             <li className="WHITE ESTEBAN nav-item">
-                                Pricing
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#about-us">About us</Link>
                             </li>
                             <li className="WHITE ESTEBAN nav-item">
-                                About us
-                            </li>
-                            <li className="WHITE ESTEBAN nav-item">
-                                Get a quote
+                                <Link className="WHITE ESTEBAN nav-item" smooth to="/#contact">Get a quote</Link>
                             </li>
                         </ul>
                     </div>

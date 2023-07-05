@@ -3,7 +3,7 @@
 const ContactForm = () => {
     
     return (
-        <div className="contact-bg">
+        <div className="contact-bg" id="contact">
             <div className="container">
                 <div className="title-container">
                     <h1 className="MONTSERRAT WHITE">Let's get in touch</h1>

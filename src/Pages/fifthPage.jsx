@@ -1,7 +1,7 @@
 
 const FifthPage = () =>{
     return(
-        <div className="fifth-page-bg">
+        <div className="fifth-page-bg" id="store">
             <div className="container">
                 <h1 className="WHITE MONTSERRAT TEXTCENTER fifth-page-title">Our Packages</h1>
                 <div className="fifth-page-card-container">

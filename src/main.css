@@ -85,7 +85,11 @@ p{
     box-sizing: 0px 10px 52px -15px rgba(97, 171, 255, 1);
     opacity: 1;
 }
-
+.nav-item:hover{
+    transform: scale(105%);
+    box-sizing: 0px 10px 52px -15px rgba(97, 171, 255, 1);
+    opacity: 1;
+}
 /*Fixed Var*/
 .horizontal-list{
     list-style: none;
@@ -144,6 +148,8 @@ p{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
+    opacity: 0.9;
 }
 .nav-ul{
     height: 100%;
