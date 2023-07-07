@@ -1,7 +1,36 @@
-"import { useForm } from 'react-hook-form';"
+import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
+    const onSubmit = async (data) => {
+        const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+        };
     
+        try {
+        const response = await fetch(
+            '/.netlify/functions/sendMail.js',
+            requestOptions
+        );
+        const jsonData = await response.json();
+    
+        console.log(jsonData);
+        toast.success('Submission successful!');
+        } catch (error) {
+        console.log(error);
+        toast.error('An error occured! See console for more details.');
+        }
+    };
+
     return (
         <div className="contact-bg" id="contact">
             <div className="container">
@@ -33,35 +62,74 @@ const ContactForm = () => {
                         </div>
                     </div>
 
-                    <div className="form-container">
+                    <form className="form-container"
+                        onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-top">
-                            <div className="small-form">
-                                <span className="ESTEBAN LIGHTGREY">Email</span>
-                                <input className="MAITREE small-text-input" type="text" />
+                            <div className='small-form'>
+                                <label className="WHITE ESTEBAN" htmlFor="email-input">
+                                    Email
+                                    <input
+                                    {...register('email', {
+                                        required: true,
+                                        pattern: /^[\w-/.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                                    })}
+                                    id="email-input"
+                                    type="text"
+                                    className='MAITREE small-text-input'
+                                    />
+                                    {errors.email && (
+                                    <span className="text-red-600">email required</span>
+                                )}
+                                </label>
                             </div>
                             <div className="small-form">
-                                <span className="ESTEBAN LIGHTGREY">Name</span>
-                                <input className="MAITREE small-text-input" type="text" />
+                                <label className="WHITE ESTEBAN" htmlFor="name-input">
+                                    Name
+                                    <input
+                                    {...register('name', { required: true })}
+                                    id="name-input"
+                                    type="text"
+                                    className="MAITREE small-text-input"
+                                    />
+                                    {errors.name && (
+                                    <span className="text-red-600">name required</span>
+                                    )}
+                                </label>
                             </div>
                         </div>
 
                         <div className="FULLWIDTH">
                             <div className="big-form">
-                                <span className="ESTEBAN LIGHTGREY">Message</span>
-                                <input className="MAITREE big-text-input" type="text" />
+                            <label className="MAITREE WHITE" htmlFor="message-input">
+                                Message
+                                <textarea
+                                    {...register('message', { required: true })}
+                                    id="message-input"
+                                    placeholder={"Hi, my name is...."}
+                                    className="FULLWIDTH big-text-"
+                                ></textarea>
+                                {errors.message && (
+                                    <span className="text-red-600">Write something!</span>
+                                )}
+                            </label>
                             </div>
                         </div>
 
                         <div className="FULLWIDTH">
-                            <input type="checkbox" />
+                        <input
+                            {...register('privacy', { required: true })}
+                            id="privacy-policy-checkbox"
+                            type="checkbox"
+                            className="contact-checkbox"
+                            />
                             <span className="ESTEBAN LIGHTGREY">By selecting this, you agree to <a href="#">privacy policy</a>.</span>
                         </div>
 
                         <div className="FULLWIDTH">
-                            <button className="SMALLBUTTON ESTEBAN WHITE BUTTONSIZE">Submit</button>
+                            <button type="submit" className="SMALLBUTTON ESTEBAN WHITE BUTTONSIZE">Submit</button>
                         </div>
 
-                    </div> 
+                    </form> 
 
                 </div>
             </div>

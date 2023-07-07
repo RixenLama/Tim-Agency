@@ -299,11 +299,9 @@ p{
     border-radius: 5px;
     text-align: center;
 }
-.privacy-policy{
-    display: flex;
-    width: 100%;
+.contact-checkbox{
+    align-self: center;
 }
-
 /*FIRST PAGE*/
 .first-page-bg{
     background-image: url(".././public/first-page.svg");
