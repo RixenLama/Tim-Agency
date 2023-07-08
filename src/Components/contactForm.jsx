@@ -18,7 +18,7 @@ const ContactForm = () => {
     
         try {
         const response = await fetch(
-            '/.netlify/functions/sendMail',
+            '/.netlify/functions/sendMail.js',
             requestOptions
         );
         const jsonData = await response.json();
