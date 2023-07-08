@@ -291,16 +291,24 @@ p{
     height: 30px;
     width: 100%;
     text-align: center;
+    padding: 0.5rem;
 }
 .big-text-input{
     border: none;
     height: 140px;
     width: 100%;
     border-radius: 5px;
-    text-align: center;
+    resize: none;
+    padding: 0.5rem;
 }
 .contact-checkbox{
     align-self: center;
+}
+.privacy-policy{
+    color: #315EFF;
+}
+.privacy-policy:visited{
+    color: #7391FA;
 }
 /*FIRST PAGE*/
 .first-page-bg{

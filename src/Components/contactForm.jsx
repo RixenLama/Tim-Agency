@@ -106,7 +106,7 @@ const ContactForm = () => {
                                     {...register('message', { required: true })}
                                     id="message-input"
                                     placeholder={"Hi, my name is...."}
-                                    className="FULLWIDTH big-text-"
+                                    className="FULLWIDTH big-text-input"
                                 ></textarea>
                                 {errors.message && (
                                     <span className="text-red-600">Write something!</span>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                             type="checkbox"
                             className="contact-checkbox"
                             />
-                            <span className="ESTEBAN LIGHTGREY">By selecting this, you agree to <a href="#">privacy policy</a>.</span>
+                            <span className="ESTEBAN LIGHTGREY">By selecting this, you agree to <a href="#" className='privacy-policy'>privacy policy</a>.</span>
                         </div>
 
                         <div className="FULLWIDTH">
