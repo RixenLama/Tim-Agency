@@ -6,6 +6,7 @@ import SecondPage from "./secondPage.jsx"
 import ThirdPage from "./thirdPage.jsx"
 import FourthPage from "./fourthPage.jsx"
 import FifthPage from "./fifthPage.jsx"
+import Footer from "../Components/footer.jsx"
 
 const HomePage = () => {
     return ( 
@@ -18,6 +19,7 @@ const HomePage = () => {
             <FourthPage />
             <FifthPage />
             <ContactForm />
+            <Footer />
         </>
     )
 }

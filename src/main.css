@@ -513,6 +513,20 @@ p{
     gap: 0.5rem;
 }
 
+/*FOOTER*/
+
+.footer-background{
+    background-color: #000000;
+}
+.footer-text{
+    font-weight: 300;
+}
+.footer-text-container{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 900px) {
     .mobile-menu-container{
         display: flex;
