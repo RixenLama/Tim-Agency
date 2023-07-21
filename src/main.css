@@ -527,6 +527,12 @@ p{
     justify-content: center;
 }
 
+.paypal-buttons{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 @media only screen and (max-width: 900px) {
     .mobile-menu-container{
         display: flex;
