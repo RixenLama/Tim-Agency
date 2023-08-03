@@ -3,12 +3,15 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const FifthPage = () =>{
 
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
     const [success, setSuccess] = useState(false);
     const [ErrorMessage, setErrorMessage] = useState("");
     const [orderID, setOrderID] = useState(false);
 
     // creates a paypal order
+
+
+
     const createOrder = (data, actions) => {
         return actions.order.create({
             purchase_units: [
@@ -83,8 +86,14 @@ const FifthPage = () =>{
                                 </div>
                             </div>
                             <div>
-                                <button className="WHITE ESTEBAN SMALLBUTTON" onClick={() => setShow(true)} >
-                                    Purchase it
+                                <button className="WHITE ESTEBAN paypal-button-div" >
+                                    {show ? (
+                                            <PayPalButtons
+                                                style={{ layout: "vertical", color: "black" }}
+                                                createOrder={createOrder}
+                                                onApprove={onApprove}
+                                            />
+                                        ) : null}
                                 </button>
                             </div>
                         </div>
@@ -119,9 +128,15 @@ const FifthPage = () =>{
                                 </div>
                             </div>
                             <div>
-                                <button className="WHITE ESTEBAN SMALLBUTTON" onClick={() => setShow(true)}>
-                                    Purchase it
-                                </button>
+                                <button className="WHITE ESTEBAN paypal-button-div">
+                                    {show ? (
+                                            <PayPalButtons
+                                                style={{ layout: "vertical", color: "silver" }}
+                                                createOrder={createOrder}
+                                                onApprove={onApprove}
+                                            />
+                                        ) : null}
+                                    </button>
                             </div>
                         </div>
 
@@ -161,22 +176,19 @@ const FifthPage = () =>{
                                 </div>
                             </div>
                             <div>
-                                <button className="WHITE ESTEBAN SMALLBUTTON" onClick={() => setShow(true)}>
-                                    Purchase it
+                                <button className="WHITE ESTEBAN paypal-button-div">
+                                    {show ? (
+                                        <PayPalButtons
+                                            style={{ layout: "vertical", color: "gold" }}
+                                            createOrder={createOrder}
+                                            onApprove={onApprove}
+                                        />
+                                    ) : null}
                                 </button>
                             </div>
                         </div>
 
                     </div>
-                </div>
-                <div className="paypal-buttons">
-                    {show ? (
-                    <PayPalButtons
-                        style={{ layout: "vertical" }}
-                        createOrder={createOrder}
-                        onApprove={onApprove}
-                    />
-                ) : null}
                 </div>
             </div>
         </PayPalScriptProvider>

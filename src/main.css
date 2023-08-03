@@ -138,7 +138,7 @@ p{
     height: 4rem;
     background-color: black;
     border-bottom: #315EFF solid 2px;
-    z-index: 2;
+    z-index: 9999999;
 }
 .nav-container{
     height: inherit;
@@ -458,11 +458,9 @@ p{
 
 /*FIFTH PAGE*/
 .fifth-page-bg{
-    background-image: url(".././public/fifth-page.svg");
+    background: linear-gradient(#242344, #315EFF);
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 .fifth-page-card-container{
     margin-top: 2rem;
@@ -470,6 +468,7 @@ p{
     justify-content: space-between;
 }
 .fifth-page-card-1{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -477,7 +476,7 @@ p{
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    height: 36rem;
+    min-height: 46rem;  
     background-color: rgba(0, 0, 0, 0.2);
 }
 .fifth-page-card-2{
@@ -488,7 +487,7 @@ p{
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    height: 36rem;
+    min-height: 46rem;
     background-color: rgba(0, 0, 0, 0.4);
 }
 .fifth-page-card-3{
@@ -499,18 +498,21 @@ p{
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    height: 36rem;
+    min-height: 46rem;
     background-color: rgba(0, 0, 0, 0.6);
 }
 .fifth-page-card-text-container{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: auto;
 }
 .fifth-page-card-stat-container{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+.paypal-button-div{
+    background: none;
 }
 
 /*FOOTER*/
@@ -534,6 +536,10 @@ p{
 }
 
 @media only screen and (max-width: 900px) {
+    .container{
+        width: 90%;
+        margin-inline: auto;
+    }
     .mobile-menu-container{
         display: flex;
     }
@@ -577,13 +583,20 @@ p{
         gap: 1rem;
     }
     .fifth-page-card-1{
-        width: 75%
+        width: 75%;
+        height: fit-content;
+        gap: 8rem;
     }
     .fifth-page-card-2{
-        width: 75%
+        width: 75%;
+        height: fit-content;
+        gap: 8rem;
     }
     .fifth-page-card-3{
-        width: 75%
+        width: 75%;
+        height: fit-content;
+        gap: 8rem;
+        
     }
     .contacts-container{
         width: 100%;
