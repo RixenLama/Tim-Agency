@@ -8,14 +8,14 @@ exports.handler = async (event) => {
       const transporter = createTransport({
         service: 'gmail',
         auth: {
-            user: 'rixenlama@gmail.com',
-            pass: 'fpkmbdpesmihbwyq'
+            user: 'theintelligentmarketercompany@gmail.com',
+            pass: process.env.VITE_GMAIL_PASS
         },
       });
 
       const mailOptions = {
-        from: 'rixenlama@gmail.com',
-        to: 'rixenlama@gmail.com',
+        from: 'theintelligentmarketercompany@gmail.com',
+        to: 'theintelligentmarketercompany@gmail.com',
         subject: `New Message from ${name}`,
         text: `Name: ${name}; Email: ${email}; Message: ${message}`,
         html: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`,

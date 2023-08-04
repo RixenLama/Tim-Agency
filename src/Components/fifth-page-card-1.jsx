@@ -52,7 +52,7 @@ const CardOne = () =>{
 
 
     return(
-        <PayPalScriptProvider options={{ "client-id":"Ac51R1hRArGU4X1RSntGTADuSgAK4VkJHZyGadjca-CetiMNE_4T3rLHsWUzJax7j95giUrQxjA_xFpG" }}>
+        <PayPalScriptProvider options={{ "client-id":"AVAe0f6St526NWzlYxOa3rPLw-YRcrikFp_2XCM1fWmjbxr7bV-m05huSrjM37I5VGQgy5--IkrGriP3" }}>
             <div className="fifth-page-card-1">
                 <div className="fifth-page-card-text-container">
                             <h4 className="WHITE ESTEBAN">
