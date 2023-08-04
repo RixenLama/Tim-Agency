@@ -3,6 +3,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const CardOne = () =>{
 
+    const ClientId = process.env.VITE_PAYPAL_CLIENT_ID;
     const [show, setShow] = useState(true);
     const [success, setSuccess] = useState(false);
     const [ErrorMessage, setErrorMessage] = useState("");
@@ -49,7 +50,7 @@ const CardOne = () =>{
 
 
     return(
-        <PayPalScriptProvider options={{ "client-id": process.env.VITE_PAYPAL_CLIENT_ID }}>
+        <PayPalScriptProvider options={{ "client-id": ClientId }}>
             <div className="fifth-page-card-1">
                 <div className="fifth-page-card-text-container">
                             <h4 className="WHITE ESTEBAN">

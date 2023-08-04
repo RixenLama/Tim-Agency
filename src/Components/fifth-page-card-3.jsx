@@ -47,7 +47,7 @@ const CardThree = () =>{
     },[success]);
 
     return(
-        <PayPalScriptProvider options={{ "client-id": process.env.VITE_PAYPAL_CLIENT_ID }}>
+        <PayPalScriptProvider options={{ "client-id":process.env.VITE_PAYPAL_CLIENT_ID}}>
             <div className="fifth-page-card-3">
                 <div className="fifth-page-card-text-container">
                     <h4 className="WHITE ESTEBAN">
