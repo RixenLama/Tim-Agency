@@ -52,7 +52,11 @@ const CardOne = () =>{
 
 
     return(
+<<<<<<< HEAD
         <PayPalScriptProvider options={{ "client-id": process.env.PAYPAL_CLIENT_ID}}>
+=======
+        <PayPalScriptProvider options={{ "client-id": process.env.PAYPAL_CLIENT_ID }}>
+>>>>>>> cd2d9c2cd6bae1a44167fec31c209779e81a803c
             <div className="fifth-page-card-1">
                 <div className="fifth-page-card-text-container">
                             <h4 className="WHITE ESTEBAN">
