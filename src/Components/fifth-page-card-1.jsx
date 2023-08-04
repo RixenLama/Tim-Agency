@@ -9,9 +9,6 @@ const CardOne = () =>{
     const [orderID, setOrderID] = useState(false);
 
     // creates a paypal order
-
-
-
     const createOrder = (data, actions, err) => {
         return actions.order.create({
             purchase_units: [
@@ -52,7 +49,7 @@ const CardOne = () =>{
 
 
     return(
-        <PayPalScriptProvider options={{ "client-id": "AVAe0f6St526NWzlYxOa3rPLw-YRcrikFp_2XCM1fWmjbxr7bV-m05huSrjM37I5VGQgy5--IkrGriP3" }}>
+        <PayPalScriptProvider options={{ "client-id":  }}>
             <div className="fifth-page-card-1">
                 <div className="fifth-page-card-text-container">
                             <h4 className="WHITE ESTEBAN">
