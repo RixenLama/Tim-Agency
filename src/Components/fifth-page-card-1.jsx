@@ -49,7 +49,7 @@ const CardOne = () =>{
 
 
     return(
-        <PayPalScriptProvider options={{ "client-id":  }}>
+        <PayPalScriptProvider options={{ "client-id": process.env.VITE_PAYPAL_CLIENT_ID }}>
             <div className="fifth-page-card-1">
                 <div className="fifth-page-card-text-container">
                             <h4 className="WHITE ESTEBAN">
