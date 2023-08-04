@@ -9,7 +9,7 @@ exports.handler = async (event) => {
         service: 'gmail',
         auth: {
             user: 'theintelligentmarketercompany@gmail.com',
-            pass: process.env.VITE_GMAIL_PASS
+            pass: process.env.VITE_GMAIL_PASS ,
         },
       });
 
