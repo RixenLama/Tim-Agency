@@ -3,7 +3,6 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const CardOne = () =>{
 
-    const ClientId = process.env.VITE_PAYPAL_CLIENT_ID;
     const [show, setShow] = useState(true);
     const [success, setSuccess] = useState(false);
     const [ErrorMessage, setErrorMessage] = useState("");
